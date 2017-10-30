@@ -24,14 +24,32 @@
       <div class="rectangle-1"></div>
       <!-- A hero class is created for the header to include the main body for the p as it needs to be editted seperately from the title.-->
       <section class="hero-content">
-        <p>
+        <p class="hero-text">
           The Central Pennsylvania Open Source Conference (CPOSC) is a new one-day technical conference about all things open source.
       </section>
       <!-- another rectangle is added to signal the smaller line on the document-->
       <div class="rectangle-2"></div>
     </header>
-    <!-- Section 2: About the Conference/Countdown Timer--> 
-
-
+    <!-- Section 2: About the Conference/Countdown Timer-->
+    <!-- Section layers are created to provide the background to the text inside of them, since there's another layer inisde the first the second section must be created in the first to make the css less complicated. Text is applied for each layer.-->
+    <section class="layer-2">
+      <h1 class="tickets-text">2017 TICKETS ARE NOW AVAILABLE:</h1>
+      <section class="layer-3">
+        <h2 class="buy-tickets-text">BUY TICKETS</h2>
+      </section>
+    </section>
+    <!-- for this section I kept it simple and placed a background layer. I used one header for the title and kept the paragraphs all under the same class to insert font types easily.-->
+    <section class="conference-content">
+      <h1 class="conference-title-text">About the Conference</h1>
+      <p class="conference-text">
+        Founded in 2008, the conference has long provided a time and place for the community of technologists to converge, converse and connect. As the technology footprint in Central PA continues to grow, so too grows the need for information and experiences to be shared and discussed among developers and users alike.
+      </p>
+      <p class="conference-text">
+        This dialogue serves as an integral component in cementing Central PA as a recognized hub of technological innovation. At CPOSC, speakers, attendees and sponsors are all equally relied upon to fuel the fire of that innovation, whether presenting on a topic, asking a question or representing a useful product or service.
+      </p>
+      <p class="conference-text">
+        CPOSC is held in historic Downtown Lancaster, Pennsylvania.
+      </p>
+    </section>
   </body>
 </html>
