@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <html>
+<!-- The head of this documents contains 2 seperate links, one for the styles being used in sass and a script link to a java page for the functioning parts of the document.-->
   <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="sass/styles.scss" type="text/css">
+    <script src="" type="text/javascript"></script>
   </head>
 
   <body>
+    <!-- Section 1: Header -->
+    <!-- The body begins with the header being used as a background layer for an image imported in css. A section is added to include the Title of the webpage and the burgerbar that will be created by css and javascript.-->
+    <header class="layer-1">
+      <section class="title-content">
+        <h1 class="header-title">CENTRAL PENNSYLVANIA OPEN SOURCE CONFERENCE</h1>
+        <div class="burgerbar-container" onclick="myFunction(this)">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+      </section>
+      <!-- Div classes are added to create boxes for rectangles in css, these will be the lines splitting across on the mobile version-->
+      <div class="rectangle-1"></div>
+      <!-- A hero class is created for the header to include the main body for the p as it needs to be editted seperately from the title.-->
+      <section class="hero-content">
+        <p>
+          The Central Pennsylvania Open Source Conference (CPOSC) is a new one-day technical conference about all things open source.
+      </section>
+      <!-- another rectangle is added to signal the smaller line on the document-->
+      <div class="rectangle-2"></div>
+    </header>
+    <!-- Section 2: About the Conference/Countdown Timer--> 
+
+
   </body>
 </html>
