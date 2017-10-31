@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <!-- The head of this documents contains 2 seperate links, one for the styles being used in sass and a script link to a java page for the functioning parts of the document.-->
-  <head>
-    <meta charset="utf-8">
-    <title>About</title>
-    <link rel="sass/styles.scss" type="text/css">
-    <script src="" type="text/javascript"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>About</title>
+  <link rel="sass/styles.scss" type="text/css">
+  <script src="" type="text/javascript"></script>
+</head>
 
-  <body>
-    <!-- Section 1: Header -->
-    <!-- The body begins with the header being used as a background layer for an image imported in css. A section is added to include the Title of the webpage and the burgerbar that will be created by css and javascript.-->
-    <header class="layer-1">
+<body>
+  <!-- Section 1: Header -->
+  <!-- The body begins with the header being used as a background layer for an image imported in css. A section is added to include the Title of the webpage and the burgerbar that will be created by css and javascript.-->
+  <section class="body-background">
+    <header class="header-background">
       <section class="title-content">
         <h1 class="header-title">CENTRAL PENNSYLVANIA OPEN SOURCE CONFERENCE</h1>
         <div class="burgerbar-container" onclick="myFunction(this)">
@@ -26,20 +27,19 @@
       <section class="hero-content">
         <p class="hero-text">
           The Central Pennsylvania Open Source Conference (CPOSC) is a new one-day technical conference about all things open source.
+        </section>
+        <!-- another rectangle is added to signal the smaller line on the document-->
+        <div class="rectangle-2"></div>
+      </header>
+      <!-- Section 2: About the Conference/Ticket Sales-->
+      <!-- Section layers are created to provide the background to the text inside of them, since there's another layer inisde the first the second section must be created in the first to make the css less complicated. Text is applied for each layer, and a link is added so you can purchase tickets.-->
+      <section class="tickets-background">
+        <h1 class="tickets-text">2017 TICKETS ARE NOW AVAILABLE:</h1>
+        <section class="buy-tickets-background">
+          <a class="buy-tickets-text" href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">BUY TICKETS</a>
+        </section>
       </section>
-      <!-- another rectangle is added to signal the smaller line on the document-->
-      <div class="rectangle-2"></div>
-    </header>
-    <!-- Section 2: About the Conference/Ticket Sales-->
-    <!-- Section layers are created to provide the background to the text inside of them, since there's another layer inisde the first the second section must be created in the first to make the css less complicated. Text is applied for each layer.-->
-    <section class="layer-2">
-      <h1 class="tickets-text">2017 TICKETS ARE NOW AVAILABLE:</h1>
-      <section class="layer-3">
-        <h2 class="buy-tickets-text">BUY TICKETS</h2>
-      </section>
-    </section>
-    <!-- for this section I kept it simple and placed a background layer. I used one header for the title and kept the paragraphs all under the same class to insert font types easily.-->
-    <section class="layer-4">
+      <!-- for this section I kept it simple and placed a background layer. I used one header for the title and kept the paragraphs all under the same class to insert font types easily.-->
       <h1 class="conference-title-text">About the Conference</h1>
       <p class="conference-text">
         Founded in 2008, the conference has long provided a time and place for the community of technologists to converge, converse and connect. As the technology footprint in Central PA continues to grow, so too grows the need for information and experiences to be shared and discussed among developers and users alike.
@@ -50,39 +50,61 @@
       <p class="conference-text">
         CPOSC is held in historic Downtown Lancaster, Pennsylvania.
       </p>
-    </section>
-    <!-- Section 3: 2017 Venue-->
-    <!-- Section 3 follows the simple background and text layout as the previous section.-->
-    <section class="layer-5">
-      <h1 class="venue-title-text">2017 Venue</h1>
-      <p class="venue-text">
-        CPOSC 2017 will be held on the ground floor at The Ware Center at Millersville University in Downtown Lancaster, PA!
+      <!-- Section 3: 2017 Venue-->
+      <!-- Section 3 follows the simple background and text layout as the previous section.-->
+      <section class="venue-background">
+        <h1 class="venue-title-text">2017 Venue</h1>
+        <p class="venue-text">
+          CPOSC 2017 will be held on the ground floor at The Ware Center at Millersville University in Downtown Lancaster, PA!
+        </p>
+        <p class="venue-text">
+          Located in the heart of the City’s arts district, The Ware Center at Millersville University Lancaster is the City’s community center dedicated to fostering civic engagement, encouraging collaboration and promoting innovation for the enrichment of the Lancaster region.
+        </p>
+        <p class="venue-text">
+          With its beautiful glass facade and welcoming presence on Prince Street, The Ware Center provides the Lancaster community with state-of-the-art facilities for a wide variety of performance, learning and cultural events.
+        </p>
+        <!-- One of the bigger changes is the addition of an image and location subtext with an address listed out below.-->
+        <div class="venue-image"></div>
+        <h2 class="venue-subtitle-text"></h2>
+        <!-- the unordered list was created in this style to make it easier to edit in css by aligning the text properly.-->
+        <ul class="location-container">
+          <li class="location-text">
+            The Ware Center
+          </li>
+          <li class="location-text">
+            at Millersville University
+          </li>
+          <li class="location-text">
+            42 N Prince St.
+          </li>
+          <li class="location-text">
+            Lancaster, PA 17603
+          </li>
+        </ul>
+      </section>
+      <!-- Section 4: Contact & Inquiries -->
+      <!-- This section is all about creating the submission form for the user to input their own information. To start a small amount of title code and text is added to inform the reader about our response. -->
+      <h1>Contact &amp; Inquiries</h1>
+      <p>
+        Someone from the CPOSC team will get back to you as soon as possible.
       </p>
-      <p class="venue-text">
-        Located in the heart of the City’s arts district, The Ware Center at Millersville University Lancaster is the City’s community center dedicated to fostering civic engagement, encouraging collaboration and promoting innovation for the enrichment of the Lancaster region.
-      </p>
-      <p class="venue-text">
-        With its beautiful glass facade and welcoming presence on Prince Street, The Ware Center provides the Lancaster community with state-of-the-art facilities for a wide variety of performance, learning and cultural events.
-      </p>
-      <!-- One of the bigger changes is the addition of an image and location subtext with an address listed out below.-->
-      <div class="venue-image"></div>
-      <h2 class="venue-subtitle-text"></h2>
-      <!-- the unordered list was created in this style to make it easier to edit in css by aligning the text properly.-->
-      <ul class="location-container">
-        <li class="location-text">
-          The Ware Center
-        </li>
-        <li class="location-text">
-          at Millersville University
-        </li>
-        <li class="location-text">
-          42 N Prince St.
-        </li>
-        <li class="location-text">
-          Lancaster, PA 17603
-        </li>
-      </ul>
-    </section>
+      <!-- Now the form is made to only hold the input, it doesn't have to be edited so it doesn't have a class. 3/4 inputs are small text boxes so they get a small-input-box class while the message needs a larger box so it's given its own class. -->
+      <form action="">
+        Name:<br>
+        <input class="small-input-box" type="text" name="fullname" value=""><br>
+        Email:<br>
+        <input class="small-input-box" type="text" name="email" value=""><br>
+        Phone:<br>
+        <input class="small-input-box" type="text" name="phone" value=""><br>
+        Message:<br>
+        <input class="large-input-box" type="text" name="message" value=""><br>
 
+        <!-- Since the submit button is eddited in CSS it has to be moved into its own section for a background and given a button type because it's not a simple submit box -->
+        <section class="submit-background">
+          <input class="submit-button" type="button" value="SUBMIT">
+        </section>
+      </form>
+
+    </section>
   </body>
-</html>
+  </html>
