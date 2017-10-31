@@ -11,7 +11,8 @@
   <body>
     <!-- Section 1: Header -->
     <!-- The body begins with the header being used as a background layer for an image imported in css. A section is added to include the Title of the webpage and the burgerbar that will be created by css and javascript.-->
-    <header class="layer-1">
+    <section class="body-background">
+    <header class="header-background">
       <section class="title-content">
         <h1 class="header-title">CENTRAL PENNSYLVANIA OPEN SOURCE CONFERENCE</h1>
         <div class="burgerbar-container" onclick="myFunction(this)">
@@ -31,15 +32,14 @@
       <div class="rectangle-2"></div>
     </header>
     <!-- Section 2: About the Conference/Ticket Sales-->
-    <!-- Section layers are created to provide the background to the text inside of them, since there's another layer inisde the first the second section must be created in the first to make the css less complicated. Text is applied for each layer.-->
-    <section class="layer-2">
+    <!-- Section layers are created to provide the background to the text inside of them, since there's another layer inisde the first the second section must be created in the first to make the css less complicated. Text is applied for each layer, and a link is added so you can purchase tickets.-->
+    <section class="tickets-background">
       <h1 class="tickets-text">2017 TICKETS ARE NOW AVAILABLE:</h1>
-      <section class="layer-3">
-        <h2 class="buy-tickets-text">BUY TICKETS</h2>
+      <section class="buy-tickets-background">
+        <a class="buy-tickets-text" href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">BUY TICKETS</a>
       </section>
     </section>
     <!-- for this section I kept it simple and placed a background layer. I used one header for the title and kept the paragraphs all under the same class to insert font types easily.-->
-    <section class="layer-4">
       <h1 class="conference-title-text">About the Conference</h1>
       <p class="conference-text">
         Founded in 2008, the conference has long provided a time and place for the community of technologists to converge, converse and connect. As the technology footprint in Central PA continues to grow, so too grows the need for information and experiences to be shared and discussed among developers and users alike.
@@ -50,10 +50,9 @@
       <p class="conference-text">
         CPOSC is held in historic Downtown Lancaster, Pennsylvania.
       </p>
-    </section>
     <!-- Section 3: 2017 Venue-->
     <!-- Section 3 follows the simple background and text layout as the previous section.-->
-    <section class="layer-5">
+    <section class="venue-background">
       <h1 class="venue-title-text">2017 Venue</h1>
       <p class="venue-text">
         CPOSC 2017 will be held on the ground floor at The Ware Center at Millersville University in Downtown Lancaster, PA!
@@ -83,6 +82,26 @@
         </li>
       </ul>
     </section>
+    <!-- Section 4: Contact & Inquiries-->
+      <h1>Contact &amp; Inquiries</h1>
+      <p>
+        Someone from the CPOSC team will get back to you as soon as possible.
+      </p>
+      <form action="">
+        Name:<br>
+        <input class="small-input-box" type="text" name="fullname" value=""><br>
+        Email:<br>
+        <input class="small-input-box" type="text" name="email" value=""><br>
+        Phone:<br>
+        <input class="small-input-box" type="text" name="phone" value=""><br>
+        Message:<br>
+        <input class="large-input-box" type="text" name="message" value=""><br>
 
+      <section class="submit-background">
+        <input class="submit-button" type="button" value="SUBMIT">
+      </section>
+      </form>
+
+    </section>
   </body>
 </html>
