@@ -1,2 +1,12 @@
 //ONLY USE THIS STYLE DOCUMENT FOR IMPORTS, TRY TO USE DIFFERENT SASS FILES FOR SECTIONS THAT CAN BE REPEATED//
 @import "css-reset";
+@import "variables";
+@import "header";
+@import "footer";
+@import "index-backgrounds-fonts";
+@import url('https://fonts.googleapis.com/css?family=Lora|Montserrat');
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
