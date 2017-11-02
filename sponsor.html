@@ -1,8 +1,162 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
+<!-- The head of this documents contains 2 seperate links, one for the styles being used in sass and a script link to a java page for the functioning parts of the document.-->
+<head>
+  <meta charset="utf-8">
+  <title>About</title>
+  <link rel="sass/styles.scss" type="text/css">
+  <script src="" type="text/javascript"></script>
+</head>
 
-  <body>
+<body>
+  <!-- this document is meant to use similar classes from the About page to reduce the amount of code used in the entire css document. Besides changing the text and adding some new content that the About page didn't have, all the other pages are going to have the same layout. -->
+  <!-- Section 1: Header -->
+  <!-- The body begins with the header being used as a background layer for an image imported in css. A section is added to include the Title of the webpage and the burgerbar that will be created by css and javascript.-->
+  <section class="body-background">
+    <header class="header-background">
+      <section class="title-content">
+        <h1 class="header-title">CENTRAL PENNSYLVANIA OPEN SOURCE CONFERENCE</h1>
+        <div class="burgerbar-container" onclick="myFunction(this)">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+      </section>
+      <!-- Div classes are added to create boxes for rectangles in css, these will be the lines splitting across on the mobile version-->
+      <div class="rectangle-1"></div>
+      <!-- A hero class is created for the header to include the main body for the p as it needs to be editted seperately from the title.-->
+      <section class="hero-content">
+        <p class="hero-text">
+          Sponsor the Central PA Open Source Conference &amp; get in front of the region’s open source technology developers, users and entrepreneurs.
+        </section>
+        <!-- another rectangle is added to signal the smaller line on the document-->
+        <div class="rectangle-2"></div>
+      </header>
+      <!-- Section 2: About the Conference/Ticket Sales-->
+      <!-- Section layers are created to provide the background to the text inside of them, since there's another layer inisde the first the second section must be created in the first to make the css less complicated. Text is applied for each layer, and a link is added so you can purchase tickets.-->
+      <section class="tickets-background">
+        <h1 class="tickets-text">2017 TICKETS ARE NOW AVAILABLE:</h1>
+        <section class="buy-tickets-background">
+          <a class="buy-tickets-text" href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">BUY TICKETS</a>
+        </section>
+      </section>
+      <!-- for this section I kept it simple and placed a background layer. I used one header for the title and kept the paragraphs all under the same class to insert font types easily.-->
+      <!-- The difference betweeen this page and About is there is less paragraphs so a previous line is removed-->
+      <h1 class="conference-title-text">Become a Sponsor</h1>
+      <p class="conference-text">
+        The Central PA Open Source Conference (CPOSC) is a one-day technical conference for open source developers and users covering all aspects of open source technologies, with presentations and panels ranging from novice to expert skill levels and featuring case studies, best practices, code-alongs and more. Since establishing in 2008, CPOSC has stood out as the region’s premier gathering for open source technologists to converge, converse and connect.
+      </p>
+      <p class="conference-text">
+        CPOSC 2017 will be held on Saturday, November 4th , at The Ware Center at Millersville University in the heart of historic Downtown Lancaster, PA, and is expected to have 150+ attendees with presentations and sessions covering all aspects of open source technologies and ranging from novice to expert skill levels.
+      </p>
+      <!-- Section 3: 2017 Venue-->
+      <!-- Section 3 follows the simple background and text layout as the previous section.-->
+      <section class="venue-background">
+        <h1 class="venue-title-text">About CPOSC</h1>
+        <p class="venue-text">
+          The target audience for CPOSC includes enthusiastic users of open source including:
+        </p>
+        <!-- The reedit on the Sponsor page is now instead of paragraphs a list is used to bullet the advantages of sponsoring CPOSC-->
+        <ul class="venue-text">
+          <li>
+            Developers who use open source languages (Ruby, Python, Perl, PHP, Java).
+          </li>
+          <li>
+            System &amp; network administrators who use open source tools.
+          </li>
+          <li>
+            Entrepreneurs who use open source technologies to power their businesses.
+          </li>
+          <li>
+            Open source project contributors (project committers and organizers).
+          </li>
+          <li>
+            Students interested in open source careers.
+          </li>
+          <li>
+            Educators who use open source in the classroom.
+          </li>
+        </ul>
+          <h1 class="venue-title-text">Why sponsor CPOSC</h1>
+          <ul class="venue-text">
+            <li>
+              Promote your company, products &amp; brand to a targeted audience.
+            </li>
+            <li>
+              Demostrate your company’s dedication to promoting innovation and diversity in tech.
+            </li>
+            <li>
+              Meet motivated &amp; talented developers for possible recruitment.
+            </li>
+            <li>
+              Help promote open source software &amp; give back to the community.
+            </li>
+          </ul>
+      </section>
+      <!-- Section 4: Contact & Inquiries -->
+      <!-- This section is all about creating the submission form for the user to input their own information. To start a small amount of title code and text is added to inform the reader about our response. -->
+      <h1>Contact &amp; Inquiries</h1>
+      <p>
+        Someone from the CPOSC team will get back to you as soon as possible.
+      </p>
+      <!-- One of the biggest edits on the sponsor page is the About form is completly replaced with a button to sponsor CPOSC. It was best to make a simple heading, paragraph, and then include a button that will redirect the user to their sponsoring page -->
+      <h1 class="sponsorship-title-text">Sponsorship Packages</h1>
+      <p class="sponsorship-text">
+        Download sponsorship PDF or contact sponsorship@cposc.org to learn more about sponsoring CPOSC.
+      </p>
+      <section class="sponsor-background">
+        <h2 class="sponsor-text">Sponsor CPOSC</h2>
+      <!-- Section 5: Location & Map-->
+      <!-- This section compromises a list of directions to the CSPOSC center. after the lists an embedded google map is added to allow the user to look at the locations, links will be clickable so the user can be taken to the locations on the map using javascript. -->
+      <section class="locations-background">
+        <h1 class="location-title-text">CONFERENCE</h1>
+        <h1 class="location-title-text">LOCATIONS</h1>
+
+        <ul>
+          <li class="location-business-name">
+            The Ware Center
+          </li>
+          <li class="location-business-direction">
+            at Millersville University
+          </li>
+          <li class="location-business-direction">
+            42 N. Prince Street,
+          </li>
+          <li class="location-business-direction">
+            Lancaster, PA 17603
+          </li>
+          <br>
+          <li class="location-business-name">
+            Prince St. Parking Garage
+          </li>
+          <li class="location-business-direction">
+            111 N. Prince Street,
+          </li>
+          <li class="location-business-direction">
+            Lancaster, PA 17603
+          </li>
+          <br>
+          <li class="location-business-name">
+            Tellus360
+          </li>
+          <li class="location-business-direction">
+            24 E. King Street,
+          </li>
+          <li class="location-business-direction">
+            Lancaster, PA 17602
+          </li>
+        </ul>
+        <!-- After the list is created, then an embedded map is added in so the user can see where the building is located. Each link on the locations should interact with a google API to bring the map to the destination of each location. -->
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13224.398074440038!2d-76.31202368819773!3d40.036359462216765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1509471047195" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <footer class="footer-background">
+        <h1 class="footer-title-text">Code of Conduct</h1>
+        <p class="footer-text">
+          CPOSC is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found on our About page, <a class="footer-text" href="http://cposc.org/code-of-conduct/" target="_blank">Code of Conduct</a>.
+        </p>
+        <a class="footer-text" href="about.html#sectionone" target="_self">Connect with CPOSC</a>
+        <h2 class="footer-subtitle-text">#CPOSC2017</h2>
+      </footer>
+    </section>
   </body>
-</html>
+  </html>
