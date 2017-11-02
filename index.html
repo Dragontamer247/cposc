@@ -8,17 +8,26 @@
   </head>
   <!-- will use more classes once css is started -->
   <body>
-    <section class="background">
-      <header>
-        <ul>
-          <li>central pennsylvania</li>
-          <li>open source conference</li>
-        </ul>
-      </header>
-        <section class="hero">
-          <h1>Into the Great Wide Open (Source)</h1>
+    <section class="body-background">
+      <header class="header-background">
+        <section class="title-content">
+          <h1 class="header-title">CENTRAL PENNSYLVANIA OPEN SOURCE CONFERENCE</h1>
+          <div class="burgerbar-container" onclick="myFunction(this)">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+          </div>
         </section>
-    </section>
+        <!-- Div classes are added to create boxes for rectangles in css, these will be the lines splitting across on the mobile version-->
+        <div class="rectangle-1"></div>
+        <!-- A hero class is created for the header to include the main body for the p as it needs to be editted seperately from the title.-->
+        <section class="hero-content">
+          <p class="hero-text">
+            Sponsor the Central PA Open Source Conference &amp; get in front of the region’s open source technology developers, users and entrepreneurs.
+          </section>
+          <!-- another rectangle is added to signal the smaller line on the document-->
+          <div class="rectangle-2"></div>
+        </header>
     <section>
       <div class="whitesquare">
         0
@@ -34,30 +43,30 @@
           <li>November 1, 2018</li>
         </ul>
     </section>
-    <section>
-      <p>2017 tickets are now available:</p>
-        <div>
-          buy tickets
-        </div>
+    <section class="tickets-background">
+      <h1 class="tickets-text">2017 TICKETS ARE NOW AVAILABLE:</h1>
+      <section class="buy-tickets-background">
+        <a class="buy-tickets-text" href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">BUY TICKETS</a>
+      </section>
     </section>
     <!-- most sections i have are for the background colors.-->
     <section>
-      <h2>The Central PA Open Source Conference (CPOSC) is a one-day technical conference for open source users and developers.</h2>
-      <p>Presentations and sessions cover all aspects of open source, with talks ranging from novice to expert skill levels and featuring case studies, best practices, code-alongs and more. Join us for a day of meeting with and learning from your technology peers.</p>
+      <h2 class="conference-title-text">The Central PA Open Source Conference (CPOSC) is a one-day technical conference for open source users and developers.</h2>
+      <p class="conference-text">Presentations and sessions cover all aspects of open source, with talks ranging from novice to expert skill levels and featuring case studies, best practices, code-alongs and more. Join us for a day of meeting with and learning from your technology peers.</p>
     </section>
-    <section>
+    <section class="venue-background">
       <!-- split into sections for easy repeated styling, and because i use section tags mostly for background-color -->
       <article>
-        <p>Why CPOSC?</p>
-        <p>Technology is evolving with unprecedented speed, which means it's more important than ever for those on the front lines of tech to gather, converse &amp; share their experiences. CPOSC offers technologists passionate about open source technologies that very opportunity through presentations, panel discussions, lightning talks &amp; more.</p>
+        <p class="smaller-title-text">Why CPOSC?</p>
+        <p class="conference-text">Technology is evolving with unprecedented speed, which means it's more important than ever for those on the front lines of tech to gather, converse &amp; share their experiences. CPOSC offers technologists passionate about open source technologies that very opportunity through presentations, panel discussions, lightning talks &amp; more.</p>
       </article>
       <article>
-        <p>Why Downtown Lancaster?</p>
-        <p>As Downtown Lancaster's arts, music, drinking &amp; dining scenes have garnered national recognition over the past decade, we firmly believe that the Lancaster tech scene is in the midst of its own big break out. By moving downtown beginning in 2016, we wanted CPOSC to be at the center of this impending tech explosion. As a bonus: it's an easy walk from the Ware Center to the CPOSC After Party!</p>
+        <p class="smaller-title-text">Why Downtown Lancaster?</p>
+        <p class="conference-text">As Downtown Lancaster's arts, music, drinking &amp; dining scenes have garnered national recognition over the past decade, we firmly believe that the Lancaster tech scene is in the midst of its own big break out. By moving downtown beginning in 2016, we wanted CPOSC to be at the center of this impending tech explosion. As a bonus: it's an easy walk from the Ware Center to the CPOSC After Party!</p>
       </article>
       <article>
-        <p>What to expect:</p>
-        <p>Since its start, CPOSC has featured some of the most experienced technologists in the industry presenting on a variety of open source topics, from introductions to emerging technologies to deep dives into coding languages, as well as high-level case studies recounting what worked, what didn't work, and the lessons learned along the way.</p>
+        <p class="smaller-title-text">What to expect:</p>
+        <p class="conference-text">Since its start, CPOSC has featured some of the most experienced technologists in the industry presenting on a variety of open source topics, from introductions to emerging technologies to deep dives into coding languages, as well as high-level case studies recounting what worked, what didn't work, and the lessons learned along the way.</p>
       </article>
     </section>
     <section>
@@ -91,32 +100,54 @@
           <a href="http://www.artsmu.com/" target="_blank"><img src="images/WareCenter.jpg"><a>
       </article>
     </section>
-    <section>
-      <h4>conference locations</h4>
-        <ul class="locationlist">
-          <li>The Ware Center</li>
-          <li>at Millersville University</li>
-          <li>42 N. Prince Street,</li>
-          <li>Lancaster, PA 17603</li>
-        </ul>
-        <ul class="locationlist">
-          <li>Prince St. Parking Garage</li>
-          <li>111 N. Prince Street,</li>
-          <li>Lancaster, PA 17603</li>
-        </ul>
-        <ul class="locationlist">
-          <li>Tellus360</li>
-          <li>24 E. King Street,</li>
-          <li>Lancaster, PA 17602</li>
-        </ul>
-      </section>
-        <div>
-        </div>
-    <footer>
-      <h5>Code of Conduct</h5>
-        <p>CPOSC is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found on our About page, under Code of Conduct.</p>
-      <h6>Connect with CPOSC</h6>
-        <p>#CPOSC2017</p>
+    <section class="locations-background">
+      <h1 class="location-title-text">CONFERENCE</h1>
+      <h1 class="location-title-text">LOCATIONS</h1>
+      <ul>
+        <li class="location-business-name">
+          The Ware Center
+        </li>
+        <li class="location-business-direction">
+          at Millersville University
+        </li>
+        <li class="location-business-direction">
+          42 N. Prince Street,
+        </li>
+        <li class="location-business-direction">
+          Lancaster, PA 17603
+        </li>
+        <br>
+        <li class="location-business-name">
+          Prince St. Parking Garage
+        </li>
+        <li class="location-business-direction">
+          111 N. Prince Street,
+        </li>
+        <li class="location-business-direction">
+          Lancaster, PA 17603
+        </li>
+        <br>
+        <li class="location-business-name">
+          Tellus360
+        </li>
+        <li class="location-business-direction">
+          24 E. King Street,
+        </li>
+        <li class="location-business-direction">
+          Lancaster, PA 17602
+        </li>
+      </ul>
+      <!-- After the list is created, then an embedded map is added in so the user can see where the building is located. Each link on the locations should interact with a google API to bring the map to the destination of each location. -->
+      <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13224.398074440038!2d-76.31202368819773!3d40.036359462216765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1509471047195" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <footer class="footer-background">
+      <h1 class="footer-title-text">Code of Conduct</h1>
+      <p class="footer-text">
+        CPOSC is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found on our About page, <a class="footer-text" href="http://cposc.org/code-of-conduct/" target="_blank">Code of Conduct</a>.
+      </p>
+      <a class="footer-text" href="about.html#sectionone" target="_self">Connect with CPOSC</a>
+      <h2 class="footer-subtitle-text">#CPOSC2017</h2>
     </footer>
-  </body>
+  </section>
+</body>
 </html>
