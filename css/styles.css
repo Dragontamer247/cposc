@@ -51,6 +51,14 @@ table {
   background-image: url("../images/hero-image.jpg");
   padding: 20px; }
 
+.header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13.6px;
+  font-weight: 800;
+  line-height: 1.38;
+  letter-spacing: 1.4px;
+  color: #f5f5f5; }
+
 .footer-background {
   background-color: #313131;
   padding: 50px 20px 100px 20px; }
