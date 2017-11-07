@@ -93,6 +93,31 @@ table {
 
 .sponsorsection {
   padding: 20px; }
+  .sponsorsection img {
+    height: 90px;
+    padding: 20px 35px 0px 0px; }
+
+.orange-box {
+  text-align: center;
+  background-color: #ffae00;
+  font-size: 18px;
+  width: 360px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 3.7;
+  color: #f5f5f5;
+  display: block;
+  letter-spacing: 0.9px; }
+
+.sponsor-text {
+  padding-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffae00;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.71;
+  letter-spacing: 1px;
+  padding-bottom: 20px; }
 
 body {
   min-width: 320px;
