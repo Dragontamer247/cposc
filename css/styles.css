@@ -181,7 +181,7 @@ table {
   line-height: 1.52;
   letter-spacing: 1px;
   text-align: left;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   padding-top: 25px; }
 
 .conference-text {
@@ -261,6 +261,63 @@ table {
   font-size: 18px;
   line-height: 1.33;
   font-family: 'Lora', serif; }
+
+.opening-reg {
+  padding: 20px; }
+
+.please-note {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.6px;
+  color: #101010; }
+
+.list-content {
+  font-size: 16px;
+  line-height: 1.69;
+  letter-spacing: 0.8px;
+  font-family: 'Lora', serif; }
+
+.session1 {
+  padding: 20px;
+  background-color: #ebebeb; }
+
+.session2 {
+  padding: 20px; }
+
+.session3 {
+  padding: 20px;
+  background-color: #ebebeb; }
+
+.session7 {
+  padding: 20px; }
+
+.session-closing {
+  padding: 20px;
+  background-color: #ebebeb; }
+
+.session-number {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.9px;
+  color: #ffae00;
+  font-family: 'Montserrat', sans-serif; }
+
+.session-time {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 5px; }
+
+.lightning {
+  padding: 20px; }
+  .lightning .conference-title-text {
+    padding: 0px; }
+
+.session-after-closing {
+  padding: 20px;
+  background-color: #ebebeb; }
+  .session-after-closing li:nth-child(even) {
+    padding: 0px; }
 
 body {
   min-width: 320px;
