@@ -34,26 +34,31 @@
       </header>
       <!-- Section 2: About the Conference/Ticket Sales-->
       <!-- Section layers are created to provide the background to the text inside of them, since there's another layer inisde the first the second section must be created in the first to make the css less complicated. Text is applied for each layer, and a link is added so you can purchase tickets.-->
-      <section class="tickets-background">
-        <h1 class="tickets-text">2017 TICKETS ARE NOW AVAILABLE:</h1>
-        <section class="buy-tickets-background">
-          <a class="buy-tickets-text" href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">BUY TICKETS</a>
-        </section>
-      </section>
+      <div class="buy-tickets-background">
+          <p class="tickets-text">2017 TICKETS ARE</p>
+          <p class="tickets-text"> NOW AVAILABLE:</p>
+          <a href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">
+          <div class="buy-tickets">
+            <p>BUY TICKETS</p>
+          </div>
+          </a>
+        </div>
       <!-- for this section I kept it simple and placed a background layer. I used one header for the title and kept the paragraphs all under the same class to insert font types easily.-->
       <!-- The difference betweeen this page and About is there is less paragraphs so a previous line is removed-->
-      <h1 class="conference-title-text">Become a Sponsor</h1>
-      <p class="conference-text">
+      <section class="conference-title">
+      <h1 class="location-title-text">Become a Sponsor</h1>
+      <p class="conference-text3">
         The Central PA Open Source Conference (CPOSC) is a one-day technical conference for open source developers and users covering all aspects of open source technologies, with presentations and panels ranging from novice to expert skill levels and featuring case studies, best practices, code-alongs and more. Since establishing in 2008, CPOSC has stood out as the region’s premier gathering for open source technologists to converge, converse and connect.
       </p>
-      <p class="conference-text">
+      <p class="conference-text3">
         CPOSC 2017 will be held on Saturday, November 4th , at The Ware Center at Millersville University in the heart of historic Downtown Lancaster, PA, and is expected to have 150+ attendees with presentations and sessions covering all aspects of open source technologies and ranging from novice to expert skill levels.
       </p>
+    </section>
       <!-- Section 3: 2017 Venue-->
       <!-- Section 3 follows the simple background and text layout as the previous section.-->
       <section class="venue-background">
         <h1 class="venue-title-text">About CPOSC</h1>
-        <p class="venue-text">
+        <p class="venue-text2">
           The target audience for CPOSC includes enthusiastic users of open source including:
         </p>
         <!-- The reedit on the Sponsor page is now instead of paragraphs a list is used to bullet the advantages of sponsoring CPOSC-->
@@ -95,17 +100,17 @@
       </section>
       <!-- Section 4: Contact & Inquiries -->
       <!-- This section is all about creating the submission form for the user to input their own information. To start a small amount of title code and text is added to inform the reader about our response. -->
-      <h1>Contact &amp; Inquiries</h1>
-      <p>
-        Someone from the CPOSC team will get back to you as soon as possible.
-      </p>
+
       <!-- One of the biggest edits on the sponsor page is the About form is completly replaced with a button to sponsor CPOSC. It was best to make a simple heading, paragraph, and then include a button that will redirect the user to their sponsoring page -->
-      <h1 class="sponsorship-title-text">Sponsorship Packages</h1>
-      <p class="sponsorship-text">
+      <section class="conference-title">
+      <h1 class="conference-title2">Sponsorship Packages</h1>
+      <p class="conference-text3">
         Download sponsorship PDF or contact sponsorship@cposc.org to learn more about sponsoring CPOSC.
       </p>
-      <section class="sponsor-background">
-        <h2 class="sponsor-text">Sponsor CPOSC</h2>
+      <div class="sponsorbutton">
+        <h2>Sponsor CPOSC</h2>
+      </div class="sponsorbutton">
+      </section>
       <!-- Section 5: Location & Map-->
       <!-- This section compromises a list of directions to the CSPOSC center. after the lists an embedded google map is added to allow the user to look at the locations, links will be clickable so the user can be taken to the locations on the map using javascript. -->
       <section class="locations-background">
