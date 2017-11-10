@@ -138,38 +138,80 @@ table {
   margin: 30px 40px 30px 15px;
   padding: 20px 40px 20px 40px; }
 
-.footer-background {
-  background-color: #313131;
-  padding: 50px 20px 100px 20px; }
+@media only screen and (max-width: 767px) {
+  .footer-background {
+    background-color: #313131;
+    padding: 50px 20px 100px 20px; }
 
-.footer-title-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ebebeb; }
+  .footer-title-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ebebeb; }
 
-.footer-text {
-  font-family: 'Lora', serif;
-  padding: 20px 0px 80px 0px;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #cecece; }
+  .footer-text {
+    font-family: 'Lora', serif;
+    padding: 20px 0px 80px 0px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cecece; }
 
-.footer-subtitle-text {
-  padding-top: 80px;
-  font-family: 'Montserrat', sans-serif;
-  color: #cecece;
-  font-size: 18px;
-  letter-spacing: 1.8px; }
+  .footer-subtitle-text {
+    padding-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: #cecece;
+    font-size: 18px;
+    letter-spacing: 1.8px; }
 
-.footer-text-underline {
-  font-family: 'Lora', serif;
-  padding: 20px 0px 80px 0px;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #cecece;
-  text-decoration: underline; }
+  .footer-text-underline {
+    font-family: 'Lora', serif;
+    padding: 20px 0px 80px 0px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cecece;
+    text-decoration: underline; } }
+@media only screen and (min-width: 768px) {
+  .footer-background {
+    background-color: #313131;
+    padding: 50px 20px 20px 20px; }
 
+  .footer-title-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ebebeb;
+    padding: 70px 0px 0px 90px; }
+
+  .footer-text {
+    font-family: 'Lora', serif;
+    padding: 20px 0px 0px 90px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cecece;
+    text-align: left;
+    width: 300px; }
+
+  .footer-subtitle-text {
+    padding-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: #cecece;
+    font-size: 18px;
+    letter-spacing: 1.8px; }
+
+  .footer-text-underline {
+    font-family: 'Lora', serif;
+    padding: 20px 0px 80px 0px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cecece;
+    text-decoration: underline; }
+
+  .desktop-footerimg {
+    float: right;
+    padding: 0px 300px 0px 0px; }
+
+  .footer-title-text:nth-last-child(2) {
+    padding: 0px; } }
 .venue-background {
   background-color: #ebebeb;
   padding: 20px; }
