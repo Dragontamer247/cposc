@@ -8,35 +8,47 @@
   </head>
   <!-- will use more classes once css is started -->
   <body>
-      <header class="header-background">
-        <section class="title-content">
-          <h1 class="header-title">CENTRAL PENNSYLVANIA </h1>
+    <body>
+        <header class="header-background">
+          <section class="title-content">
+            <section class="titlewords">
+            <h1 class="header-title">CENTRAL PENNSYLVANIA </h1>
             <h1 class="header-title"> OPEN SOURCE CONFERENCE</h1>
-          <div class="burgerbar-container" onclick="myFunction(this)">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-          </div>
-        </section>
-        <!-- Div classes are added to create boxes for rectangles in css, these will be the lines splitting across on the mobile version-->
-        <div class="rectangle-1"></div>
-        <!-- A hero class is created for the header to include the main body for the p as it needs to be editted seperately from the title.-->
-        <section class="hero-content">
-            <p class="hero-text">Speakers &amp; Sessions</p>
           </section>
-          <!-- another rectangle is added to signal the smaller line on the document-->
-          <div class="rectangle-2"></div>
-        </header>
+              <section class="navbar">
+                <a href="index.html">HOME</a>
+                <a href="speakers.html">SPEAKERS &amp; SESSIONS</a>
+                <a href="sponsor.html">BECOME A SPONSOR</a>
+                <a href="tickets.html">TICKETS</a>
+                <a href="about.html">ABOUT</a>
+              </section>
+                <div class="burgerbar-container" onclick="myFunction(this)">
+                  <div class="bar-1"></div>
+                  <div class="bar-2"></div>
+                  <div class="bar-3"></div>
+                </div>
+          </section>
+          <!-- Div classes are added to create boxes for rectangles in css, these will be the lines splitting across on the mobile version-->
+          <div class="rectangle-1"></div>
+          <!-- A hero class is created for the header to include the main body for the p as it needs to be editted seperately from the title.-->
+          <section class="hero-content">
+              <p class="hero-text">Speakers &amp; Sessions</p>
 
-  <div class="buy-tickets-background">
-      <p class="tickets-text">2017 TICKETS ARE</p>
-      <p class="tickets-text"> NOW AVAILABLE:</p>
-      <a href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">
-      <div class="buy-tickets">
-        <p>BUY TICKETS</p>
+              <div class="rectangle-2"></div>
+            </section>
+            <!-- another rectangle is added to signal the smaller line on the document-->
+          </header>
+
+
+    <div class="buy-tickets-background">
+        <p class="tickets-text">2017 TICKETS ARE</p>
+        <p class="tickets-text"> NOW AVAILABLE:</p>
+        <a href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">
+        <div class="buy-tickets">
+          <p>BUY TICKETS</p>
+        </div>
+        </a>
       </div>
-      </a>
-    </div>
   <!-- Used lists for easy repeated styling and collapsable menu which will be done in Javascript-->
     <section class="opening-reg">
       <p class="please-note">Please note this schedule is subject to minor changes</p>
@@ -233,56 +245,71 @@
         <li class="list-content">Tellus360</li>
       </ul>
     </section>
-    <section class="locations-background">
-      <h1 class="location-title-text">CONFERENCE</h1>
-      <h1 class="location-title-text">LOCATIONS</h1>
-      <ul>
-        <li class="location-business-name">
-          The Ware Center
-        </li>
-        <li class="location-business-direction">
-          at Millersville University
-        </li>
-        <li class="location-business-direction">
-          42 N. Prince Street,
-        </li>
-        <li class="location-business-direction">
-          Lancaster, PA 17603
-        </li>
-      </ul>
-      <ul>
-        <li class="location-business-name">
-          Prince St. Parking Garage
-        </li>
-        <li class="location-business-direction">
-          111 N. Prince Street,
-        </li>
-        <li class="location-business-direction">
-          Lancaster, PA 17603
-        </li>
-      </ul>
-      <ul>
-        <li class="location-business-name">
-          Tellus360
-        </li>
-        <li class="location-business-direction">
-          24 E. King Street,
-        </li>
-        <li class="location-business-direction">
-          Lancaster, PA 17602
-        </li>
-      </ul>
+    <section class="flexbox-loc">
+      <section class="locations-background">
+        <h1 class="location-title-text">CONFERENCE</h1>
+        <h1 class="location-title-text">LOCATIONS</h1>
+        <ul>
+          <li class="location-business-name">
+            The Ware Center
+          </li>
+          <li class="location-business-direction">
+            at Millersville University
+          </li>
+          <li class="location-business-direction">
+            42 N. Prince Street,
+          </li>
+          <li class="location-business-direction">
+            Lancaster, PA 17603
+          </li>
+        </ul>
+        <ul>
+          <li class="location-business-name">
+            Prince St. Parking Garage
+          </li>
+          <li class="location-business-direction">
+            111 N. Prince Street,
+          </li>
+          <li class="location-business-direction">
+            Lancaster, PA 17603
+          </li>
+        </ul>
+        <ul>
+          <li class="location-business-name">
+            Tellus360
+          </li>
+          <li class="location-business-direction">
+            24 E. King Street,
+          </li>
+          <li class="location-business-direction">
+            Lancaster, PA 17602
+          </li>
+        </ul>
+        </section>
+        <!-- After the list is created, then an embedded map is added in so the user can see where the building is located. Each link on the locations should interact with a google API to bring the map to the destination of each location. -->
+        <section class="map">
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13224.398074440038!2d-76.31202368819773!3d40.036359462216765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1509471047195" frameborder="0" allowfullscreen></iframe>
       </section>
-      <!-- After the list is created, then an embedded map is added in so the user can see where the building is located. Each link on the locations should interact with a google API to bring the map to the destination of each location. -->
-      <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13224.398074440038!2d-76.31202368819773!3d40.036359462216765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1509471047195" frameborder="0" allowfullscreen></iframe>
-
-    <footer class="footer-background">
-      <h1 class="footer-title-text">Code of Conduct</h1>
-      <p class="footer-text">
-        CPOSC is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found on our About page, <a class="footer-text-underline" href="http://cposc.org/code-of-conduct/" target="_blank">Code of Conduct</a>.
-      </p>
-      <a class="footer-title-text" href="about.html#sectionone" target="_self">Connect with CPOSC</a>
-      <h2 class="footer-subtitle-text">#CPOSC2017</h2>
-    </footer>
-</body>
-</html>
+    </section>
+      <footer class="footer-background">
+        <section class="footerflex1">
+          <section class="stufff">
+            <h1 class="footer-title-text">Code of Conduct</h1>
+            <p class="footer-text">
+              CPOSC is dedicated to a harassment-free conference experience for everyone. Our anti-harassment policy can be found on our About page, <a class="footer-text-underline" href="http://cposc.org/code-of-conduct/" target="_blank">Code of Conduct</a>.
+            </p>
+          </section>
+      <section class="connectsec">
+        <a class="footer-title-text" href="about.html#sectionone" target="_self">Connect with CPOSC</a>
+      <section class="footerimg">
+        <a href="https://www.facebook.com/Central-PA-Open-Source-Conference-290337789136/"><img src="http://cposc.org/wp-content/uploads/2016/09/social-fb.png"></a>
+        <a href="https://twitter.com/CPOSC"><img src="http://cposc.org/wp-content/uploads/2016/09/social-tw.png" alt="social-TW" width="40" height="40" class="alignnone size-full wp-image-386"></a>
+        <a href="https://www.linkedin.com/company/central-pa-open-source-conference"><img src="http://cposc.org/wp-content/uploads/2016/09/social-in.png" alt="cposc linkedin" width="40" height="40" class="alignnone size-full wp-image-384"></a>
+        <a href="https://github.com/cposc"><img src="http://cposc.org/wp-content/uploads/2016/10/social-git.png" alt="cposc github" width="40" height="40" class="alignnone size-full wp-image-445"></a>
+      </section>
+        <h2 class="footer-subtitle-text">#CPOSC2017</h2>
+      </section>
+        </section>
+      </footer>
+  </body>
+  </html>
