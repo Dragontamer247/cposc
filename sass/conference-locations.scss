@@ -26,7 +26,7 @@
 @media only screen and (min-width: 768px){
   .locations-background{
     background-color: #ffae00;
-    padding: 50px 20px 100px 50px;
+    padding: 50px 20px 100px 90px;
     width: 40%;
   }
   .map{
@@ -35,7 +35,6 @@
   .flexbox-loc{
     display: flex;
     flex-flow: row;
-    width: 100%;
   }
   .location-title-text{
     font-size: 21px;
