@@ -6,7 +6,12 @@ linear-gradient(
   rgba(0, 0, 0, 0.8)
   ),
 url("../images/hero-image.jpg");
-padding: 20px;
+}
+.title-content{
+  padding: 20px 20px 0px 20px;
+}
+.hero-content{
+  padding: 0px 20px 20px 20px;
 }
 .header-title{
   font-family: 'Montserrat', sans-serif;
@@ -131,6 +136,15 @@ padding: 20px;
     background-color: #ffffff;
     margin: 25px 0px 70px 0px;
   }
+  .hero-text{
+    font-family: 'Lora', serif;
+    font-size: 32px;
+  	font-weight: bold;
+  	letter-spacing: 1.6px;
+  	color: #ffae00;
+    padding-right: 145px;
+  }
+
   .hero-text2{
     font-family: 'Lora', serif;
     font-size: 72px;
@@ -142,7 +156,7 @@ padding: 20px;
     width: 100px;
     height: 5px;
     background-color: #ffffff;
-    margin: 25px 0px 70px 0px;
+    margin: 35px 0px 70px 0px;
   }
   .countdown-rectangle{
         ul{
@@ -154,7 +168,7 @@ padding: 20px;
     background-color: #ffae00;
     margin: 20px;
     top: -70px;
-    right: -400px;
+    right: -500px;
     position: relative;
     width: 700px;
     height: 135px;
@@ -224,15 +238,15 @@ padding: 20px;
     padding: 30px 0px 0px 90px;
   }
   .navbar{
-        a{
-          padding-right: 15px;
-          color: #f5f5f5;
-        }
+          a{
+            padding-right: 15px;
+            color: #f5f5f5;
+          }
     font-size: 14px;
     font-weight: 500;
     line-height: 1.71;
     letter-spacing: 1.4px;
     font-family: 'Montserrat', sans-serif;
-    padding-left: 450px;
+    padding-left: 750px;
   }
 }

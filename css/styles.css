@@ -49,8 +49,13 @@ table {
 
 @media only screen and (max-width: 767px) {
   .header-background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/hero-image.jpg");
-    padding: 20px; }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/hero-image.jpg"); }
+
+  .title-content {
+    padding: 20px 20px 0px 20px; }
+
+  .hero-content {
+    padding: 0px 20px 20px 20px; }
 
   .header-title {
     font-family: 'Montserrat', sans-serif;
@@ -166,6 +171,14 @@ table {
     background-color: #ffffff;
     margin: 25px 0px 70px 0px; }
 
+  .hero-text {
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    color: #ffae00;
+    padding-right: 145px; }
+
   .hero-text2 {
     font-family: 'Lora', serif;
     font-size: 72px;
@@ -177,13 +190,13 @@ table {
     width: 100px;
     height: 5px;
     background-color: #ffffff;
-    margin: 25px 0px 70px 0px; }
+    margin: 35px 0px 70px 0px; }
 
   .countdown-rectangle {
     background-color: #ffae00;
     margin: 20px;
     top: -70px;
-    right: -400px;
+    right: -500px;
     position: relative;
     width: 700px;
     height: 135px;
@@ -261,7 +274,7 @@ table {
     line-height: 1.71;
     letter-spacing: 1.4px;
     font-family: 'Montserrat', sans-serif;
-    padding-left: 450px; }
+    padding-left: 750px; }
     .navbar a {
       padding-right: 15px;
       color: #f5f5f5; } }
@@ -528,7 +541,10 @@ table {
   .location-business-direction {
     font-size: 18px;
     line-height: 1.33;
-    font-family: 'Lora', serif; } }
+    font-family: 'Lora', serif; }
+
+  .google-map {
+    width: 100%; } }
 @media only screen and (min-width: 768px) {
   .locations-background {
     background-color: #ffae00;
@@ -537,6 +553,10 @@ table {
 
   .map {
     width: 59%; }
+
+  .google-map {
+    width: 100%;
+    height: 100%; }
 
   .flexbox-loc {
     display: flex;
