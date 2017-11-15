@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <script src="" type="text/javascript"></script>
+
   </head>
   <!-- will use more classes once css is started -->
   <body>
@@ -21,11 +21,18 @@
               <a href="tickets.html">TICKETS</a>
               <a href="about.html">ABOUT</a>
             </section>
-              <div class="burgerbar-container" onclick="myFunction(this)">
-                <div class="bar-1"></div>
-                <div class="bar-2"></div>
-                <div class="bar-3"></div>
-              </div>
+            <section class="navigation">
+            <a href="#" class="button">Search</a>
+            <div class="sidebar hidden">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="speakers.html">Speakers & Sessions</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="sponsor.html">Sponsorship</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+            </div>
+          </section>
         </section>
         <!-- Div classes are added to create boxes for rectangles in css, these will be the lines splitting across on the mobile version-->
         <div class="rectangle-1"></div>
@@ -39,13 +46,13 @@
           <!-- another rectangle is added to signal the smaller line on the document-->
         </header>
     <div class="countdown-rectangle">
-      <div class="whitesquare">
+      <div class="whitesquare" id="boxOne">
         0
       </div>
-      <div class="whitesquare">
+      <div class="whitesquare" id="boxTwo">
         0
       </div>
-      <div class="whitesquare">
+      <div class="whitesquare" id="boxThree">
         0
       </div>
         <ul>
@@ -57,7 +64,7 @@
   <div class="buy-tickets-background">
       <p class="tickets-text">2017 TICKETS ARE</p>
       <p class="tickets-text"> NOW AVAILABLE:</p>
-      <a href="https://www.eventbrite.com/e/central-pa-open-source-conference-tickets-37584374877#tickets" target="_blank">
+      <a href="tickets.html" target="_self">
       <div class="buy-tickets">
         <p>BUY TICKETS</p>
       </div>
@@ -90,7 +97,7 @@
       <h3 class="conference-title-text">Conference Sponsors</h3>
         <p class="conference-text">Thank you for supporting open source in Central Pennsylvania!</p>
       </section>
-        <a href="http://cposc.org/sponsor/" target="_blank">
+        <a href="sponsor.html" target="_self">
           <div class="orange-box">
             BECOME A SPONSOR
           </div>
@@ -189,5 +196,9 @@
     </section>
       </section>
     </footer>
+    <script src="javascript/counter.js" type="text/javascript"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrCZAb_D7TObuLuD9eXqKscOIp3ceNBbU&callback=initMap">
+    </script>
 </body>
 </html>
